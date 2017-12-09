@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>UGA Fanpage</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-</head>
+    <title>Scraping With Mongoose</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <style>
+        body { background-color: white }
+        h2 { font-weight: bolder }
+        }
+      </style>
+  </head>
+  <body>
+    <div id="wrapper">
+    <div class="container">
+      <div class="jumbotron">
+          <h1 class="text-center">NYTimes Scraper</h1>
+          <h2 class="text-center">Tech Articles</h2>
+      </div>
 
-<body>
-    <div class="jumbotron" id="jumboContainer">
-        <div class="text-center" id="jumboHead">
-            <h1>Year of the Dawg</h1>
-            <h2>Check out all of the latest updates on UGA football happenings! Go Dawgs.</h2>
-        </div>
-        <center><img align="middle" src="bulldawgHead.jpg" class="img-circle" id="ugaPic" alt="uga football fan">
-    </div></center>
-    <div class id="wrapper">
-        <h2><span>Click on an article to add a comment</span></h2>
-        <div id="articles"></div>
-        <div id="notes"></div>
+      <div id="container">
+          <form>
+            <h3>Comments</h3>
+            <textarea id="textarea" rows="4" cols="50"></textarea>
+            <input style="display:block;clear:both;margin-bottom:40px;" type="submit" method="PUT" action="/articles/notes" name="note-submit">
+          </form>
+      </div>
+      
+      <div id="articles"></div>
+      <div id="notes"></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

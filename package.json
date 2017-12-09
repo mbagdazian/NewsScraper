@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/mbagdazian/NewsScraper/issues"
   },
-  "homepage": "https://github.com/mbagdazian/NewsScraper#readme"
+  "homepage": "https://github.com/mbagdazian/NewsScraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.6",
+    "morgan": "^1.9.0",
+    "request": "^2.83.0"
+  }
 }
